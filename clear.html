@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Float and Clear</title>
+	<style type="text/css">
+		.div1{
+			float: left;
+			padding: 10px;
+			border: 3px solid blueviolet;
+		}
+		.div2{
+			padding: 10px;
+			border: 3px solid green;
+		}
+		.div3{
+			float: left;
+			padding: 10px;
+			border: 3px solid red;
+		}
+		.div4{
+			clear: left;
+			padding: 10px;
+			border: 3px solid pink;
+		}
+		.div5{
+			float: lefts;
+			padding: 20px;
+			border: 3px solid black;
+		}
+		.div6{
+			float: right;
+			padding: 20px;
+			border: 3px solid yellow;
+		}
+		.div7{
+			clear: both;
+			padding: 10px;
+			border: 3px solid darkorange;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">div 1</div>
+	<div class="div2">div 2:notice that div2 is after the div1 in the HTML code. However, since div1 dloat to the left, the text in div2 flows around div1</div>
+	<br>
+	<div class="div3">div3</div>
+	<div class="div4">div4: here,clear: Left; move div4 down below the floating div3. the value"left" clears element floated to the left. You can also clear"right" and "both"</div>
+	<br>
+	<div class="div5">div5</div>
+	<div class="div6">div6</div>
+	<div class="div7">div 7: left; moves div4 down below the floating div3. The value"left"clears elements floated to the left. you can also clear"right" and "both"</div>
+
+</body>
+</html>

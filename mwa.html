@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		nav{text-transform:uppercase;letter-spacing:0.063em;font-size:0.75em;}
+			.header nav ul li{display:inline-block;margin-left:20px;}
+			nav ul li a{letter-spacing:2px;color:#fff;-webkit-transition:color .2s ease;-o-transition:color .2s ease;transition:color .2s ease;padding:3px 0;margin-bottom:10px;position:relative;display:inline-block;}
+			.effect ul li a:hover{color:#FBFAFC;}
+			.effect ul li a:hover::after, .effect ul li a:hover::before{width:100%;left:0;}
+			.effect ul li a::after, .effect ul li a::before{content:'';position:absolute;top:calc(100% + 5px);width:0;right:0;height:3px;}
+			.effect ul li a::before{-webkit-transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;-o-transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;background:#845EC2;}
+			.effect ul li a::after{-webkit-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);-o-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);background:#2FFFAD;}
+			.effect ul li a.active:after{background:#2FFFAD;width:100%;left:0;}
+			.effect ul li a.active:before{z-index:2;}
+			.gradient .bgnew{position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;background-image:-webkit-gradient(linear, left bottom, right top, from(#ff2f55), color-stop(#d61c6e), color-stop(#a22579), color-stop(#6a2b74), color-stop(#342961),to(#021f44));background-image:-webkit-linear-gradient(left bottom, #ff2f55, #d61c6e, #a22579, #6a2b74, #342961,#021f44);background-image:-o-linear-gradient(left bottom, #ff2f55, #d61c6e, #a22579, #6a2b74, #342961,#021f44);background-image:linear-gradient(to right top, #ff2f55, #d61c6e, #a22579, #6a2b74, #342961,#021f44);}
+			.gradient h1{margin:0 auto 35px;font-size:2.2em;text-align:center;}
+			.gradient .color-input{width:100%;margin:0 auto;}
+			.gradient .color-input form{width:25%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+			.gradient .color-input button{margin:0 auto 30px;}
+			.gradient .color-input form .choose input{width:auto;}
+			.gradient .color-input form input{margin: 0 10px;}
+			.gradient .code-box{width:25%;background-blend-mode:overlay;border-left:0px solid #696969;margin:0 auto 20px;padding-bottom:20px}
+			.gradient .code-box p, .gradient .color-input p{font-weight:900;border-bottom:1 px solid #00a1ba;margin-bottom:20px;paddin-bottom:5px;display:block;font-size:1em;text-shadow:none;}
+			.gradient .code-box p{margin-bottom:5px;text-align:left;}
+			.gradient .code-box code{font-family:'Space Mono', monospace;width:100%;margin:0 auto;display:block;line-height:1.4;letter-spacing:0.2px;border-left:3px solid #fff;background-color:rgba(189,189,189,0.1);padding:15px 8px 15px 17px;border-radius:5px;}
+			.gradient .code-box code::-moz-selection{background:#00c9b7;}
+			.gradient .code-box code::selection{background:#00c9b7;}
+			.gradient .code-box code::-moz-selection{background:#00c9b7;}
+			.gradient .color-input .labels{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;margin-bottom:30px;}
+			.gradient .choose{margin-bottom:10px;}
+			
+	</style>
+</head>
+<body>
+	<nav class="effect">
+						<ul>
+							<li><a href="/">Palettes</a></li>
+							<li><a href="/gradient.php">Gradient</a></li>
+							<li class="gc3"><a class="active" href="/gradient3.php">3-color-gradient</a></li>
+							<li><a href="/contact.php">Contact</a></li>
+							<li><a href="/info.php">Info</a></li>
+							<li><a style="font-size:18px;" target="_blank" href="https://twitter.com/MyColorSpaces" title="color space twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</nav>
+
+</body>
+</html>

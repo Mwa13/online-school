@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Background size</title>
+	<style type="text/css">
+		div{
+			width: 450px;
+			height: 500px;
+			background-color: plum;
+		}
+		div.cover{
+			background-image: url(8.webp);
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+		div.contain{
+			background-image: url(0.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="cover"></div><br>
+	<div class="contain"></div>
+
+</body>
+</html>

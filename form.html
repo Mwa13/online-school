@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Design</title>
+</head>
+<body>
+	<form action="C:\Users\Acer\Desktop\Ict purple"></form>
+	<fieldset>
+	<legend>Personalia:</legend>
+
+	<form>
+		<h3>single line input</h3>
+		<label for="fname">first name:</label>
+		<input type="text" id="fname" name="fname"><br><br>
+		<label for="iname">last name:</label>
+		<input type="text" id="iname" name="fname"><br><br>
+		<label for="gmail">gmail:</label>
+		<input type="text" id="gmail" name="fname"><br><br>
+		<label for="age">Age:</label>
+		<input type="text" id="age" name="fname"><br><br>
+		<label for="pwd">Password</label>
+		<input type="Password" id="pwd" name="Password">
+
+
+
+	</form>
+	<h3>radio button</h3>
+
+	<input type="radio" id="html" name="fav_language" value="HTML">
+	<label for="html">HTML</label>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+	<label for="css">CSS</label>
+    <input type="radio" id="javascript" name="fav_language" value="javascript">
+	<label for="javascript">JavaScript</label>
+
+	<h3>Check box</h3>
+
+    <input type="checkbox" id="ict"  name="ict" value="ICT">
+	<label for="ict">i love ict</label>
+	<input type="checkbox" id="science"  name="science" value="SCIECNE">
+	<label for="science">i love science</label>
+	<input type="checkbox" id="math"  name="math" value="MATH">
+	<label for="math">i love math</label>
+    <input type="checkbox" id="eng"  name="eng" value="ENG">
+	<label for="eng">i love english</label>
+   <h1>i love ict teacher</h1>
+   <br><br>
+
+
+   <input type="submit" value="Submit">
+   <button type="button" on onclick="alert('you won')">click me</button></fieldset>
+   <form>
+   	    <fieldset>
+   	    	<legend>selection and dropdown list</legend>
+   	    	<label for="cars">choose a cars</label>
+   	    	<select id="cars" name="cars" size="6" multiple>
+   	    		<optgroup label="Swedish cars">
+   	    			<option value="volvo">volvo</option>
+   	    		    <option value="saab">saab</option>
+   	    		</optgroup>
+   	    		
+   	    		<optgroup label="German cars">
+   	    			<option value="fiat">fiat</option>
+   	    		    <option value="audi"selected>audi</option>
+   	    		</optgroup>
+   	    		
+   	    	</select>
+   	    </fieldset>
+   </form>
+   <form>
+   	    <fieldset>
+   	    	<legend>selection and dropdown list</legend>
+   	    	<label for="cars">choose a cars</label>
+   	    	<select id="cars" name="cars">
+   	    		<option value="volvo">volvo</option>
+   	    		<option value="saab">saab</option>
+   	    		<option value="fiat">fiat</option>
+   	    		<option value="audi"selected>audi</option>
+   	    	</select>
+   	    </fieldset>
+   </form>
+   <form>
+   	<fieldset>
+   		<legend>Selection and dropdown list</legend>
+   		<label for="fruit">choose a fruit</label>
+   		<select id="fruit" name="fruit" size="6">
+   			<option value="APPLE">Apple</option>
+   			<option value="orange">Orange</option>
+   			<option value="mango">Mango</option>
+   			<option value="banana">Banana</option>
+   			<option value="papaya">Papaya</option>
+   			<option value="lemon">Lemon</option>
+
+
+   		</select>
+   			<label>data list</label>
+   			<input list="donghua">
+   			<datalist id="donghua">
+   				<option value="throne of seal"></option>
+   				<option value="soul land"></option>
+   				<option value="battle through the havens"></option>
+   				<option value="the island of siliang"></option>
+
+   		</datalist>
+   		<input type="color">
+   		<input type="date" id="maxdate" name="maxdate" max="2004-12-31">
+   		<input type="datetime-local">
+
+   		<input type="number" min="0" max="100" value="10">
+   		<input type="range" value="50">
+     </fieldset>
+   </form>
+   <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+   	  <input type="number" id="a" name="a" value="9000">
+   	  +<input type="range" id="b" name="b" value="90">
+   	  =<output for="a b" name="x"></output>
+
+   	
+   </form>
+   <!-- HTML !-->
+
+
+
+
+
+
+
+</body>
+</html>
